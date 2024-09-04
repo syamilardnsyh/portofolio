@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e67e22;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.container {
+    text-align: center;
+    margin-top: 150px;
+    padding: 0 20px;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+}
+
+.container h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #34495e;
+}
+
+/* About Section */
+.about {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.about .column {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portofolio {
+    padding: 100px 20px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.portofolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.gallery {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white; /* Latar belakang putih untuk galeri */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Memberi jarak antar galeri */
+    text-align: center; /* Mengatur teks di tengah */
+}
+
+.gallery img {
+    border-radius: 8px 8px 0 0; /* Mengatur sudut atas gambar */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.desc {
+    padding: 15px;
+    font-size: 1em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0; /* Menghapus margin ekstra */
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 100px 20px;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-info-item {
+    text-align: center;
+}
+
+.contact-info-icon {
+    font-size: 2.5em;
+    color: #e67e22;
+}
+
+.contact-info-text h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #e67e22;
+}
