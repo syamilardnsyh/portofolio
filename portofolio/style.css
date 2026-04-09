@@ -60,46 +60,44 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #007BFF;
+    color: #1ABC9C;
 }
 
-/* Hero Section - Simple */
-section {
-    padding-top: 80px;
+/* Home / Hero Section */
+#home {
+    padding-top: 120px; /* Jarak untuk mengimbangi header yang fixed */
+    padding-bottom: 60px;
     text-align: center;
     background-color: #1ABC9C;
     color: white;
-    padding: 40px 0;
 }
 
-.container {
+#home .container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.container img {
+#home img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     margin-bottom: 15px;
+    border: 4px solid white; /* Memberi bingkai putih agar lebih rapi */
 }
 
-h3 {
+#home h3 {
     font-size: 24px;
     font-weight: 500;
     margin: 10px 0;
 }
 
-.container p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
 /* About Section */
 #about {
     background-color: #ecf0f1;
-    padding: 60px 20px;
+    padding: 80px 20px;
     color: #333;
+    text-align: center;
 }
 
 #about h2 {
@@ -114,23 +112,31 @@ h3 {
     margin: 0 auto;
 }
 
-/* Portfolio Section */
-#portofolio {
+/* Portfolio Sections (KOL & IT) */
+#portofolio-it, #kol-portofolio {
     background-color: #34495e;
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-#portofolio h2 {
+/* Pembeda warna untuk section KOL agar tidak monoton */
+#kol-portofolio {
+    background-color: #2C3E50; 
+}
+
+#portofolio-it h2, #kol-portofolio h2 {
     font-size: 36px;
     margin-bottom: 40px;
 }
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
@@ -140,6 +146,7 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Mencegah gambar keluar dari sudut membulat */
 }
 
 .card:hover {
@@ -148,7 +155,6 @@ h3 {
 
 .card-img {
     width: 100%;
-    border-radius: 8px 8px 0 0;
     height: 200px;
     object-fit: cover;
 }
@@ -158,31 +164,31 @@ h3 {
 }
 
 .card-content h3 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
 .card-content p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.card-content a {
-    font-size: 20px;
+.card-content a i {
+    font-size: 24px;
     color: #333;
     transition: color 0.3s ease;
 }
 
-.card-content a:hover {
-    color: #007BFF;
+.card-content a i:hover {
+    color: #1ABC9C;
 }
 
 /* Contact Section */
 #contact {
     background-color: #1ABC9C;
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -193,18 +199,18 @@ h3 {
 
 .contact-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .contact-info-item {
-    width: 300px;
-    margin-bottom: 20px;
+    width: 250px;
 }
 
 .contact-info-item i {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
 .contact-info-item h2 {
@@ -218,24 +224,23 @@ h3 {
 }
 
 .contact-info-item span a:hover {
-    color: #007BFF;
+    color: #2C3E50;
 }
 
 /* Footer */
 footer {
-    background-color: #2C3E50;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
+    background-color: #222;
+    padding: 30px;
+    color: #bbb;
 }
 
 footer .social a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 20px;
+    color: #bbb;
+    margin: 0 15px;
+    font-size: 24px;
     transition: color 0.3s ease;
 }
 
 footer .social a:hover {
-    color: #007BFF;
+    color: #1ABC9C;
 }
